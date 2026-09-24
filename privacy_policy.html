@@ -16,161 +16,35 @@
       --accent: #176b5b;
       --accent-soft: #dff0e7;
     }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      background: var(--paper);
-      color: var(--ink);
-      font: 16px/1.7 Georgia, "Times New Roman", serif;
-    }
-
-    header {
-      padding: 64px 24px 48px;
-      background: #e8f1e9;
-      border-bottom: 1px solid var(--line);
-    }
-
-    .wrap {
-      width: min(100% - 48px, 960px);
-      margin: 0 auto;
-    }
-
-    .brand {
-      color: var(--accent);
-      font: 700 14px/1.2 Arial, sans-serif;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-    }
-
-    h1,
-    h2 {
-      font-family: Arial, sans-serif;
-      line-height: 1.15;
-    }
-
-    h1 {
-      max-width: 720px;
-      margin: 18px 0 12px;
-      font-size: clamp(2.5rem, 6vw, 4.5rem);
-      letter-spacing: -0.045em;
-    }
-
-    .lede {
-      max-width: 670px;
-      margin: 0;
-      color: var(--muted);
-      font-size: 1.2rem;
-    }
-
-    main {
-      padding: 36px 0 72px;
-    }
-
-    .layout {
-      display: grid;
-      grid-template-columns: 210px 1fr;
-      gap: 48px;
-      align-items: start;
-    }
-
-    nav {
-      position: sticky;
-      top: 20px;
-      padding: 18px;
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      font: 14px/1.45 Arial, sans-serif;
-    }
-
-    nav strong {
-      display: block;
-      margin-bottom: 10px;
-    }
-
-    nav a {
-      display: block;
-      padding: 5px 0;
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    article {
-      padding: 34px 40px;
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 8px;
-    }
-
-    h2 {
-      margin: 34px 0 10px;
-      font-size: 1.35rem;
-    }
-
-    h2:first-of-type {
-      margin-top: 0;
-    }
-
-    p {
-      margin: 0 0 16px;
-    }
-
-    ul {
-      margin: 0 0 18px;
-      padding-left: 24px;
-    }
-
-    li {
-      margin: 5px 0;
-    }
-
-    .notice {
-      margin: 0 0 28px;
-      padding: 16px 18px;
-      background: var(--accent-soft);
-      border-left: 4px solid var(--accent);
-    }
-
-    footer {
-      padding: 28px 24px 48px;
-      color: var(--muted);
-      font: 13px/1.5 Arial, sans-serif;
-      text-align: center;
-    }
-
-    footer a {
-      color: var(--accent);
-    }
-
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.7 Georgia, "Times New Roman", serif; }
+    header { padding: 64px 24px 48px; background: #e8f1e9; border-bottom: 1px solid var(--line); }
+    .wrap { width: min(100% - 48px, 960px); margin: 0 auto; }
+    .brand { color: var(--accent); font: 700 14px/1.2 Arial, sans-serif; letter-spacing: 0.14em; text-transform: uppercase; }
+    h1, h2 { font-family: Arial, sans-serif; line-height: 1.15; }
+    h1 { max-width: 720px; margin: 18px 0 12px; font-size: clamp(2.5rem, 6vw, 4.5rem); letter-spacing: -0.045em; }
+    .lede { max-width: 670px; margin: 0; color: var(--muted); font-size: 1.2rem; }
+    main { padding: 36px 0 72px; }
+    .layout { display: grid; grid-template-columns: 210px 1fr; gap: 48px; align-items: start; }
+    nav { position: sticky; top: 20px; padding: 18px; background: var(--card); border: 1px solid var(--line); border-radius: 8px; font: 14px/1.45 Arial, sans-serif; }
+    nav strong { display: block; margin-bottom: 10px; }
+    nav a { display: block; padding: 5px 0; color: var(--accent); text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    article { padding: 34px 40px; background: var(--card); border: 1px solid var(--line); border-radius: 8px; }
+    h2 { margin: 34px 0 10px; font-size: 1.35rem; }
+    h2:first-of-type { margin-top: 0; }
+    p { margin: 0 0 16px; }
+    ul { margin: 0 0 18px; padding-left: 24px; }
+    li { margin: 5px 0; }
+    .notice { margin: 0 0 28px; padding: 16px 18px; background: var(--accent-soft); border-left: 4px solid var(--accent); }
+    footer { padding: 28px 24px 48px; color: var(--muted); font: 13px/1.5 Arial, sans-serif; text-align: center; }
+    footer a { color: var(--accent); }
     @media (max-width: 700px) {
-      header {
-        padding: 44px 20px 34px;
-      }
-
-      .wrap {
-        width: min(100% - 32px, 960px);
-      }
-
-      .layout {
-        display: block;
-      }
-
-      nav {
-        position: static;
-        margin-bottom: 20px;
-      }
-
-      article {
-        padding: 26px 22px;
-      }
+      header { padding: 44px 20px 34px; }
+      .wrap { width: min(100% - 32px, 960px); }
+      .layout { display: block; }
+      nav { position: static; margin-bottom: 20px; }
+      article { padding: 26px 22px; }
     }
   </style>
 </head>
@@ -179,9 +53,7 @@
     <div class="wrap">
       <div class="brand">ParkTrace</div>
       <h1>Privacy Policy</h1>
-      <p class="lede">
-        A clear account of what ParkTrace stores, why it needs access, and how you stay in control of your saved places.
-      </p>
+      <p class="lede">A clear account of what ParkTrace stores, why it needs access, and how you stay in control of your saved places.</p>
     </div>
   </header>
 
@@ -194,10 +66,11 @@
         <a href="#permissions">3. Permissions</a>
         <a href="#maps">4. Maps &amp; network</a>
         <a href="#sharing">5. Sharing</a>
-        <a href="#control">6. Your choices</a>
-        <a href="#security">7. Security</a>
-        <a href="#changes">8. Changes</a>
-        <a href="#contact">9. Contact</a>
+        <a href="#third-party">6. Third-party services</a>
+        <a href="#control">7. Your choices</a>
+        <a href="#security">8. Security</a>
+        <a href="#changes">9. Changes</a>
+        <a href="#contact">10. Contact</a>
       </nav>
 
       <article>
@@ -205,7 +78,7 @@
           <strong>Last updated:</strong> September 24, 2026.
           ParkTrace is designed as a local-first Android application.
           This policy describes core application behavior.
-          The current store listing and device permission prompts may provide additional details for a particular release.
+          The store listing, permission prompts, and any third-party services included in a particular release may provide additional details.
         </p>
 
         <h2 id="scope">1. Scope</h2>
@@ -236,9 +109,11 @@
           <li>
             <strong>Location:</strong> used when you request your current position, measure distance, or choose a place using GPS.
             ParkTrace can save coordinates you provide without an active network connection.
+            If a particular release uses an external geocoding, reverse-geocoding, or routing service, that service may receive the coordinates needed for the request; see the store listing for release-specific details.
           </li>
           <li>
             <strong>Camera and photos:</strong> used only when you choose to capture or select a photo for a saved place.
+            Photos you attach are stored with your saved-place data on the device.
             You can decline these permissions and still use location-saving features that do not require them.
           </li>
           <li>
@@ -256,10 +131,10 @@
 
         <h2 id="maps">4. Maps and network services</h2>
         <p>
-          The map picker uses OpenStreetMap data and an online map tile provider as configured by the app.
-          Loading map tiles may send technical request information, such as your device’s network address and the requested map area, to that provider.
+          When the app loads online map tiles (for example via OpenStreetMap data and a configured tile provider), the tile provider may receive technical request information such as your device’s network address and the requested map area.
           The map provider’s terms and privacy policy apply to those requests.
           Coordinates saved in ParkTrace remain usable as locally stored data when connectivity is limited.
+          If a release does not load online map tiles, this network disclosure does not apply to that release.
         </p>
 
         <h2 id="sharing">5. Sharing and third parties</h2>
@@ -270,10 +145,16 @@
         </p>
         <p>
           ParkTrace’s core functionality is not intended to sell your saved places or use them for advertising.
-          A given release may include third-party SDKs or services identified in the relevant store listing; consult that listing for release-specific disclosures.
         </p>
 
-        <h2 id="control">6. Your choices and data retention</h2>
+        <h2 id="third-party">6. Third-party SDKs and remote services</h2>
+        <p>
+          Some releases may include third-party software development kits (SDKs) or remote services (for example analytics, crash reporting, or maps-related libraries).
+          Any such components, and the data they may process, will be identified in the relevant Google Play store listing and Data safety section.
+          If a release contains no analytics, advertising, or remote account-based services, the core app continues to operate primarily with on-device storage.
+        </p>
+
+        <h2 id="control">7. Your choices and data retention</h2>
         <p>
           You can edit or delete saved places, remove attached photos, disable reminders, change permissions, and choose whether to create or share backups.
           Uninstalling the app or clearing its storage can remove locally stored data, subject to Android backups and files you exported separately.
@@ -281,25 +162,27 @@
         </p>
         <p>
           ParkTrace has no account portal through which we can retrieve or delete your local database.
-          For questions about a store-distributed release, contact the ParkTrace publisher through the support contact shown in the applicable store listing.
         </p>
 
-        <h2 id="security">7. Security</h2>
+        <h2 id="security">8. Security</h2>
         <p>
           We use the platform storage and permission controls available to the app, but no device, file, or transmission is completely secure.
           Use a device lock, keep Android updated, and treat exported backups and shared links as sensitive if they contain private places.
         </p>
 
-        <h2 id="changes">8. Changes to this policy</h2>
+        <h2 id="changes">9. Changes to this policy</h2>
         <p>
           We may update this policy when ParkTrace’s features, permissions, or services change.
           The “Last updated” date above will change when a new version is published.
-          Continued use after an update means the revised policy applies to future use.
+          The updated policy applies from the stated effective date (or the Last updated date), subject to applicable law.
         </p>
 
-        <h2 id="contact">9. Contact</h2>
+        <h2 id="contact">10. Contact</h2>
         <p>
-          For privacy questions or requests related to ParkTrace, use the support contact published with the ParkTrace app in the relevant app store.
+          For privacy questions or requests related to ParkTrace, contact us at
+          <strong>privacy@yourdomain.com</strong>
+          (replace with your real support email)
+          or through the support contact shown in the Google Play store listing.
           Please do not send sensitive location data unless it is necessary to resolve your request.
         </p>
       </article>
